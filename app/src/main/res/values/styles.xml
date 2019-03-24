@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorBackground</item>
+        <item name="colorPrimaryDark">@color/colorBackgroundDark</item>
+    </style>
+    <style name="textInputLayoutStyle" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textAlignment">center</item>
+        <item name="boxBackgroundColor">@color/textBackground</item>
+        <item name="boxStrokeColor">@color/strokeColor</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+    </style>
+    <style name="textInputStyle">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textCursorDrawable">@drawable/text_cursor_drawable</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/gotham_bold</item>
+        <item name="android:maxLines">1</item>
+    </style>
+    <style name="mySpinnerStyle" >
+        <item name="android:background">@color/colorBackground</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:entries">@array/thermometers</item>
+    </style>
+    <style name="mySpinnerItemStyle">
+        <item name="android:textColor">@color/strokeColor</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/gotham_bold</item>
+        <item name="android:background">@drawable/ripple_item_drawable</item>
+    </style>
+    <style name="myDDSpinnerItemStyle">
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">28sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/gotham_bold</item>
+        <item name="android:background">@color/strokeColor</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+    <style name="textResultStyle" >
+        <item name="android:textColor">@color/textWhite</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">85sp</item>
+        <item name="android:fontFamily">@font/gotham_bold</item>
+        <item name="android:background">@drawable/rounded_textview</item>
+    </style>
+    <style name="btnResultStyle">
+        <item name="android:textColor">@color/strokeColor</item>
+        <item name="android:text">@string/btnResultText</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/gotham_bold</item>
+        <item name="android:background">@drawable/ripple_item_drawable</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+    <style name="switchStyle">
+        <item name="android:textColor">@color/textBackground</item>
+        <item name="android:text">@string/switchResTemp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/gotham_bold</item>
+        <item name="android:background">@drawable/switch_drawable</item>
+    </style>
+</resources>

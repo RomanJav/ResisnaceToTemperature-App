@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorBackground">#09557A</color>
+    <color name="colorBackgroundDark">#00574B</color>
+    <color name="textColor">#123313</color>
+    <color name="textBackground">#57FFFFFF</color>
+    <color name="textWhite">#FFFFFF</color>
+    <color name="switchBackground">#007280</color>
+    <color name="strokeColor">#FF9FE554</color>
+    <color name="solidColor">#169FE554</color>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">КИП. Градуировочные таблицы</string>
+    <string name="switchResTemp">Cопротивлениe в температуру</string>
+    <string name="btnResultText">Перевести</string>
+    <string name="hintText">42</string>
+    <string-array name="thermometers">
+        <item>100 - П</item>
+        <item>50 - П</item>
+        <item>100 - М</item>
+        <item>50 - М</item>
+    </string-array>
+</resources>
