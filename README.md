@@ -1,1 +1,1 @@
-# ResisnaceToTemperature-App
+# ResistanceToTemperature-App
