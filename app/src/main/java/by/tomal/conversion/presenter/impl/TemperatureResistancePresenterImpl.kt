@@ -10,7 +10,12 @@ class TemperatureResistancePresenterImpl(dbHelper: DatabaseHelper) : Temperature
         TemperatureResistanceDataImpl(dbHelper.readableDatabase)
 
     override fun getTemperature(value: String, thermometer: String): String {
-        return temperatureResistanceData.getTemperatureData(findResistance(value.toDouble(), getThermometerToQueryString(thermometer)).toDouble(), getThermometerToQueryString(thermometer))
+        return temperatureResistanceData.getTemperatureData(
+            findResistance(
+                value.toDouble(),
+                getThermometerToQueryString(thermometer)
+            ).toDouble(), getThermometerToQueryString(thermometer)
+        )
     }
 
     override fun getResistance(value: String, thermometer: String): String {

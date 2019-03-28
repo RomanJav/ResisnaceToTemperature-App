@@ -7,11 +7,11 @@ import java.io.*
 
 class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_VERSION) {
     companion object {
-        val DB_VERSION = 1
-        val DB_NAME = "resistanceTemperatureDB.db"
+        private const val DB_VERSION = 1
+        private const val DB_NAME = "resistanceTemperatureDB.db"
     }
-    val myDatabase: SQLiteDatabase
-    val myContext: Context = context
+    private val myDatabase: SQLiteDatabase
+    private val myContext: Context = context
     var needUpdate = false
 
     init {
