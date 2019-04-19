@@ -64,11 +64,32 @@
     </style>
     <style name="switchStyle">
         <item name="android:textColor">@color/textBackground</item>
-        <item name="android:text">@string/switchResTemp</item>
+        <item name="android:text">@string/fromResistanceToTemperature</item>
         <item name="android:textSize">15sp</item>
         <item name="android:padding">10dp</item>
         <item name="android:textAlignment">center</item>
         <item name="android:fontFamily">@font/gotham_bold</item>
         <item name="android:background">@drawable/switch_drawable</item>
+    </style>
+    <style name="btnRateAppStyle">
+        <item name="android:textColor">@color/strokeColor</item>
+        <item name="android:text">@string/rateApp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/gotham_bold</item>
+        <item name="android:background">@drawable/ripple_item_drawable</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+    </style>
+    <style name="textInfoStyle">
+        <item name="android:textColor">@color/strokeColor</item>
+        <item name="android:text">@string/textInfo</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/gotham_bold</item>
+        <item name="android:background">@drawable/ripple_item_drawable</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
     </style>
 </resources>

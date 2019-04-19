@@ -1,18 +1,21 @@
-package by.tomal.conversion.model
+package by.tomal.conversion.model.helper
 
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 import java.io.*
 
-class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DB_NAME, null, DB_VERSION) {
+class DatabaseHelper(context: Context) : SQLiteOpenHelper(context,
+    DB_NAME, null,
+    DB_VERSION
+) {
     companion object {
         private const val DB_VERSION = 1
         private const val DB_NAME = "resistanceTemperatureDB.db"
     }
     private val myDatabase: SQLiteDatabase
     private val myContext: Context = context
-    var needUpdate = false
+    private val dbFile = myContext.getDatabasePath(DB_NAME)
 
     init {
         myDatabase = open()
@@ -23,10 +26,9 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DB_NAME, null
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
         if (newVersion > oldVersion)
-            needUpdate = true
+            copyDatabase(dbFile)
     }
     private fun open(): SQLiteDatabase {
-        val dbFile = myContext.getDatabasePath(DB_NAME)
         if (!dbFile.exists()){
             try {
                 val checkDB = myContext.openOrCreateDatabase(DB_NAME, Context.MODE_PRIVATE,null)

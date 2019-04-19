@@ -8,6 +8,7 @@
         tools:context="by.tomal.conversion.view.MainActivity"
         android:background="@color/colorBackground">
 
+
     <TextView
             android:id="@+id/converterResult"
             style="@style/textResultStyle"
@@ -40,7 +41,7 @@
             app:layout_constraintEnd_toEndOf="parent">
         <android.support.design.widget.TextInputEditText
                 android:id="@+id/textInputValue"
-                style = "@style/textInputStyle"
+                style="@style/textInputStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
         <Switch
@@ -60,4 +61,18 @@
             android:layout_marginTop="40dp"
             app:layout_constraintTop_toBottomOf="@+id/textInput"/>
 
+    <ImageView
+            android:id="@+id/btnInfo"
+            android:background="@drawable/baseline_info_24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <android.support.constraint.ConstraintLayout
+            android:id="@+id/containerInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 </android.support.constraint.ConstraintLayout>

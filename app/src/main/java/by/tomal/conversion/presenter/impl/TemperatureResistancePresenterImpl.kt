@@ -1,6 +1,6 @@
 package by.tomal.conversion.presenter.impl
 
-import by.tomal.conversion.model.DatabaseHelper
+import by.tomal.conversion.model.helper.DatabaseHelper
 import by.tomal.conversion.model.impl.TemperatureResistanceDataImpl
 import by.tomal.conversion.presenter.TemperatureResistancePresenter
 
@@ -22,9 +22,6 @@ class TemperatureResistancePresenterImpl(dbHelper: DatabaseHelper) : Temperature
         return temperatureResistanceData.getResistanceData(value.toInt(), getThermometerToQueryString(thermometer))
     }
 
-    fun closeDatabase() {
-        temperatureResistanceData.close()
-    }
 
     private fun findResistance(resistanceUserValue: Double, thermometer: String): String {
         var resistanceResult = ""
@@ -73,5 +70,9 @@ class TemperatureResistancePresenterImpl(dbHelper: DatabaseHelper) : Temperature
             "50 - М" -> return "cu50"
         }
         return "thermometer is null"
+    }
+
+    fun closeDatabase() {
+        temperatureResistanceData.close()
     }
 }

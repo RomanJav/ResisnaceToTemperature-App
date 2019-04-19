@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Temperature-Resistance. Calibration tables</string>
+    <string name="btnResultText">Convert</string>
+    <string name="hintTextTemperature">Range -30…200</string>
+    <string name="hintTextResistance">Enter resistance</string>
+    <string name="fromResistanceToTemperature">Resistance to temperature</string>
+    <string name="fromTemperatureToResistance">Temperature to resistance</string>
+    <string name="errorValue">Can`t find value in data</string>
+    <string name="rateApp">Rate app</string>
+    <string name="textInfo">Thanks for using this application!\n
+        A little help:\n
+        The minimum temperature for which there is data -30 C, maximum +200\n
+        \n
+        Minimum resistance for thermometers 100x graduations: 87.12\n
+        Maximum resistance for thermometers 100x graduations: 185.583\n
+        Minimum resistance for thermometers 50x graduations: 43.56\n
+        Maximum resistance for thermometers 50x graduations: 92.7915\n
+        \n
+        If you enter numbers above the maximum or below the minimum data values, an error message will appear, or if
+        near, the maximum and minimum temperatures are shown, respectively\n
+        All data is taken from the calibration tables used in my company and when calibrating thermometers.\n
+        \n
+        Do not forget to rate the app in the Play Market, if you like it!\n
+    </string>
+
+    <string-array name="thermometers">
+        <item>100 - П</item>
+        <item>50 - П</item>
+        <item>100 - М</item>
+        <item>50 - М</item>
+    </string-array>
+</resources>
